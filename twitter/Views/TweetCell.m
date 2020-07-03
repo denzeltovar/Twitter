@@ -84,6 +84,6 @@
     [self.favoriteButton setImage:[UIImage imageNamed:@"favor-icon-red.png"] forState:UIControlStateSelected];
     
     self.retweetLabel.text = [NSString stringWithFormat:@"%d", self.tweet.retweetCount];
-    [self.retweetButton setImage:[UIImage imageNamed:@"favor-icon-green.png"] forState:UIControlStateSelected];
+    [self.retweetButton setImage:[UIImage imageNamed:@"retweet-icon-green.png"] forState:UIControlStateSelected];
 }
 @end

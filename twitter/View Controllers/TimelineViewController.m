@@ -14,7 +14,6 @@
 #import"ComposeViewController.h"
 #import "LoginViewController.h"
 #import "AppDelegate.h"
-#import "ResponsiveLabel.h"
 
 @interface TimelineViewController () <ComposeViewControllerDelegate, UITableViewDataSource, UITableViewDelegate, TwitterDetailsViewControllerDelegate>
 
@@ -88,10 +87,12 @@
             }
             [self.tableView reloadData];
         }
+        
         [self.refreshControl endRefreshing];
     }];
     [task resume];
 }
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.tweets.count;
 }
